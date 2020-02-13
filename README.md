@@ -16,6 +16,8 @@ automaticamente
 Obviamente, fomos pela segunda opção. Para tanto, é necessário que o site seja publicado na raiz de um repositório com
 o nome correto e, pra não misturar os _statics_ com todo o _source_ do site, dividimos o projeto em dois repositórios.  
 Assim, o conteúdo final do site gerado fica em `/output_prod`, que é um submódulo desse aqui.
+
+Também habilitamos uma extensão do Markdown. [Os detalhes do que é possível fazer a mais está disponível na página do processador em PHP usado](https://michelf.ca/projects/php-markdown/extra).
  
 > *Disclaimer:* esse projeto foi baseado no exemplo de Blog Skeleton que tem no [Get Started deles](https://sculpin.io/getstarted).
 
@@ -29,7 +31,7 @@ _muidifício_.
 2. Entre na pasta, e prepare o submódulo: `git submodule init; git submodule update`
 3. Dependências: `composer install` (espero que você tenha o Composer instalado, né? Senão, veja [a seguir](#Composer))
 4. _[opcional]_ Se você for mexer no layout, você vai precisar do `node-sass` ou algum outro compilador de SASS. 
-Instale-o pelo NPM ou Yarn: `npm install --global node-sass` ou `yarn global add node-sass`.
+Instale-o pelo NPM: `npm install --global node-sass`.
 
 > Não tente seguir as instruções do site do Sculpin. Elas estão bem desatualizadas (mandando usar um phar, por exemplo).
 
